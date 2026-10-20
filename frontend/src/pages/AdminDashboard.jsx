@@ -135,9 +135,9 @@ export default function AdminDashboard() {
   const [classes, setClasses] = useState([]);
   const [payments, setPayments] = useState([]);
 
-  const STUDENTS_URL = "http://localhost:5000/api/students";
-  const TEACHERS_URL = "http://localhost:5000/api/teachers";
-  const CLASSES_URL = "http://localhost:5000/api/classes";
+  const STUDENTS_URL = "https://aisha-center.onrender.com/api/students";
+  const TEACHERS_URL = "https://aisha-center.onrender.com/api/teachers";
+  const CLASSES_URL = "https://aisha-center.onrender.com/api/classes";
 
   const fetchLiveMongoData = async () => {
     try {

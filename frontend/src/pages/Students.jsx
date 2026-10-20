@@ -164,7 +164,7 @@ export default function Students() {
     status: "Active",
   });
 
-  const BASE_URL = "http://localhost:5000/api/students";
+ const BASE_URL = "https://aisha-center.onrender.com/api/students";
 
   const fetchStudents = async () => {
     try {

@@ -163,7 +163,7 @@ export default function Teachers() {
     status: "Active",
   });
 
-  const BASE_URL = "http://localhost:5000/api/teachers";
+ const BASE_URL = "https://aisha-center.onrender.com/api/teachers";
 
   const fetchTeachers = async () => {
     try {

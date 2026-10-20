@@ -147,8 +147,8 @@ export default function Classes() {
   });
   const [message, setMessage] = useState("");
 
-  const BASE_URL = "http://localhost:5000/api/classes";
-  const TEACHERS_URL = "http://localhost:5000/api/teachers";
+  const BASE_URL = "https://aisha-center.onrender.com/api/classes";
+  const TEACHERS_URL = "https://aisha-center.onrender.com/api/teachers";
 
   const fetchData = async () => {
     try {
