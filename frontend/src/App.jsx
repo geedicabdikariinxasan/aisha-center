@@ -1,26 +1,26 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Login from './pages/Login';
 import Register from './pages/Register';
 import AdminDashboard from './pages/AdminDashboard';
-import Students from './pages/Students'; // <--- Hubi inaa import gareysay Students
-import Teachers from './pages/Teachers'; // <--- Hubi inaa import gareysay
+import Students from './pages/Students';
+import Teachers from './pages/Teachers';
 import Classes from './pages/Classes';
-// import Classes from './pages/Classes'; // Wixii kale ee soo socda
 
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Navigate to="/login" />} />
+        {/* Halkan: Marka qofku galo link-ga weyn, wuxuu toos u arkaa Login isagoo aan URL-ka waxba ku darin */}
+        <Route path="/" element={<Login />} />
+        
+        {/* Haddii aad rabto in /login laftiisu uu shaqeeyo waad ku deyn kartaa */}
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
-        {/* Labada Route-ba waa la isku xiray si uusan Error u keenin */}
         <Route path="/dashboard" element={<AdminDashboard />} />
-        <Route path="/admindashboard" element={<AdminDashboard />} />
-        <Route path="/students" element={<Students />} /> {/* <--- Route-ka Students */} 
-        <Route path="/teachers" element={<Teachers />} /> {/* <--- Route-ka Teachers */}
-         <Route path="/classes" element={<Classes />} /> {/* <--- Route-ka Classes */}
+        <Route path="/students" element={<Students />} />
+        <Route path="/teachers" element={<Teachers />} />
+        <Route path="/classes" element={<Classes />} />
       </Routes>
     </Router>
   );
